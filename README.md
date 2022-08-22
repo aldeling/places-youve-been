@@ -21,6 +21,11 @@ Code:
 DestinationBook.prototype.findDestination(0)
 Expected Output: Destination {place: 'France', city: 'Paris', landmark: 'Effile Tower', id: 0}
 
+Test: "It should delete a destination by id"
+Code:
+DestinationBook.prototype.deleteDestination(0)
+Expected Output: DestinationBook {destination: {...}}
+
 //Destination Business Logic
 
 Describes: Destination()

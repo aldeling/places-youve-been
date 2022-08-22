@@ -11,7 +11,7 @@ DestinationBook.prototype.addDestination = function (destination) {
 };
 
 DestinationBook.prototype.assignId = function () {
-  this.currentid =+ 1;
+  this.currentId =+ 1;
   return this.currentId;
 };
 
@@ -21,6 +21,14 @@ DestinationBook.prototype.findDestination = function(id) {
   }
   return false;
 };
+
+DestinationBook.prototype.deleteDestination = function(id) {
+  if (this.destinations[id] === undefined) {
+    return false;
+  }
+  delete this.destinations[id]
+  return true;
+}
 
 // Destination Business Logic
 
