@@ -15,6 +15,13 @@ DestinationBook.prototype.assignId = function () {
   return this.currentId;
 };
 
+DestinationBook.prototype.findDestination = function(id) {
+  if (this.destinations[id] !== undefined) {
+    return this.destinations[id];
+  }
+  return false;
+};
+
 // Destination Business Logic
 
 function Destination (place, city, landmark) {

@@ -16,7 +16,10 @@ this.currentId += 1;
 destinationBook.prototype.assignId(destination1)
 Expected Outcome: 0
 
-
+Test: "It should find a contact based on its id"
+Code:
+DestinationBook.prototype.findDestination(0)
+Expected Output: Destination {place: 'France', city: 'Paris', landmark: 'Effile Tower', id: 0}
 
 //Destination Business Logic
 
