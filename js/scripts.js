@@ -2,13 +2,18 @@
 
 function DestinationBook() {
   this.destinations = {};
-  //this.currentId = 0;
+  this.currentId = 0;
 };
 
 DestinationBook.prototype.addDestination = function (destination) {
-  this.destinations[destination.place] = destination;
+  destination.id = this.assignId();
+  this.destinations[destination.id] = destination;
 };
 
+DestinationBook.prototype.assignId = function () {
+  this.currentid =+ 1;
+  return this.currentId;
+};
 
 // Destination Business Logic
 

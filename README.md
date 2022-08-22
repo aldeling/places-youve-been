@@ -6,16 +6,15 @@ Describe: DestinationBook()
 
 Test: "It should add destinations."
 Code:
-destinationBook.prototype.addDestination()
-
-
-}
+destinationBook.prototype.addDestination = function (destination) {
+  this.destinations[destination.place] = destination;
 Expected Output: destinationBook.destinations; {France: Destination}
-let destination1 = new Destiantin
 
-
-
-
+Test: "It should add an id to destinations"
+Code:
+this.currentId += 1;
+destinationBook.prototype.assignId(destination1)
+Expected Outcome: 0
 
 
 
